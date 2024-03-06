@@ -39,20 +39,20 @@ const Home = () => {
     </select>
     <input type="date" className="bg-gray-50 border border-gray-100 text-gray-900 w-full lg:w-1/3 p-4 rounded-lg" />
     </div>
-    <div>
-      <h2>Our Destination</h2>
-      <div className="flex flex-col lg:flex-row md:flex-row justify-between bg-gray-200 rounded-lg w-[100%] mx-auto p-4">
+    <div className="text-[#333333]">
+      <h2 className="text-[48px] font-[500] mb-8 text-center">Our Destination</h2>
+      <div className="flex flex-col lg:flex-row md:flex-row justify-between bg-[#6f9fff27] rounded-lg w-[100%] mx-auto p-4">
         <div className="mr-4">
           <img src={train1} alt="" className="rounded-lg" />
-          <p className="my-2">Lagos</p>
+          <p className="my-2 text-[32px]">Lagos</p>
         </div>
         <div className="mr-4">
           <img src={train2} alt="" className="rounded-lg" />
-          <p className="my-2">Abeokuta</p>
+          <p className="my-2 text-[32px]">Abeokuta</p>
         </div>
         <div>
           <img src={train3} alt="" className="rounded-lg" />
-          <p className="my-2">Ibadan</p>
+          <p className="my-2 text-[32px]">Ibadan</p>
         </div>
       </div>
     </div>
@@ -119,11 +119,14 @@ const Home = () => {
     <h2 className="text-[40px]  font-[500] text-right">We are offering the best hassle-free online train ticketing system</h2>
       </div>
     </section>
-    <section className="lg:w-[85%] md:w-[85%] w-[100%] mx-auto">
-      <ReviewSlider />
+    <section>
+    <ReviewSlider />
+    </section>
+    <section className="lg:w-[85%] md:w-[85%] w-[100%] mx-auto pb-24 pt-36">
     <h2 className="text-[48px] font-[500] mb-8 capitalize text-center">frequently asked questions</h2>
       <AccordionUsage />
     </section>
+    
     </main>
   )
 }
