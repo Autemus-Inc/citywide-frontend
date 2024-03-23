@@ -13,11 +13,13 @@ import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 
 const router = createBrowserRouter(createRoutesFromElements(
+  <Route>
   <Route path="/" element={<HomeLayout />} >
   <Route index element={<Home />} />
   <Route path='/about' element={<About />} />
   <Route path="/contact"  element={<Contact />} />
   <Route path="/trips"  element={<Trips/>} />
+  </Route>
   <Route path="/login"  element={<Login />} />
   <Route path="/signup"  element={<Signup />} />
   </Route>
@@ -26,7 +28,7 @@ const router = createBrowserRouter(createRoutesFromElements(
 function App() {
 
     return (
-      <div className="App">
+      <div className="text-[#333333] max-w-[1440px]">
         <RouterProvider router={router} />
     </div> 
     )
