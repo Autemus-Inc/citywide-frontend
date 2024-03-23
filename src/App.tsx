@@ -28,7 +28,7 @@ const router = createBrowserRouter(createRoutesFromElements(
 function App() {
 
     return (
-      <div className="App">
+      <div className="text-[#333333] max-w-[1440px]">
         <RouterProvider router={router} />
     </div> 
     )
